@@ -126,7 +126,7 @@ def graph(message):
         global interval
         interval = message.text
         markup = types.ReplyKeyboardMarkup()
-        markup.row('sma', 'getEMA', 'checkMACD', 'stoch', 'rsi', 'adx')
+        markup.row('sma', 'getEMA', 'checkMACD', 'stoch', 'rsi', 'adx', 'tech')
         bot.send_message(message.chat.id, "chose one", reply_markup=markup)
     except Exception as e:
         markup = types.ReplyKeyboardMarkup()
